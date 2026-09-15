@@ -1,0 +1,51 @@
+.detail-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.detail-header img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.detail-title {
+    color: white;
+    width: 100%;
+}
+
+.detail-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-player-link,
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.add-player-link:hover,
+.back-link:hover {
+    color: #1E90FF;;
+}
+
+.add-player-link img,
+.back-link img {
+    width: 20px;
+    height: 20px;
+}
+
+.add-player-link:hover img,
+.back-link:hover img {
+    transform: scale(1.2);
+    filter: brightness(0) saturate(100%)
+            invert(48%) sepia(99%)
+            saturate(2000%) hue-rotate(194deg)
+            brightness(103%) contrast(101%);
+}
