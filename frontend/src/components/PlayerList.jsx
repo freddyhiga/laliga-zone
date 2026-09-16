@@ -106,7 +106,7 @@ function PlayerList({ players, showUpdate = false, showDelete = false }) {
                         className='delete-btn'
                         onClick={() => handleDelete(player)}
                       >
-                        <img src='/icon/x.svg' alt='Delete player' />
+                        <img src='/images/icons/x.svg' alt='Delete player' />
                       </button>
                     </div>
                   </td>
@@ -129,7 +129,7 @@ function PlayerList({ players, showUpdate = false, showDelete = false }) {
             className='back-to-top-button'
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <img src='/icon/circle-arrow-up.svg' alt='back to top' />
+            <img src='/images/icons/circle-arrow-up.svg' alt='back to top' />
           </button>
         )}
       </div>

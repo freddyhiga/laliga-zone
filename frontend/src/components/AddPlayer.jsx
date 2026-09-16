@@ -8,6 +8,20 @@ import teamColors from '../utils/teamColors';
 import { getTeamLogo } from '../utils/teamUtils';
 import { playerValidation } from '../utils/playerValidation';
 import { nations } from '../utils/nationUtils';
+import { getPositionName } from '../utils/positionUtils';
+
+const positions = [
+  'GK',
+  'DF',
+  'MF',
+  'FW',
+  'MF,DF',
+  'MF,FW',
+  'FW,DF',
+  'FW,MF',
+  'DF,MF',
+  'DF,FW',
+];
 
 function AddPlayer() {
   const { team } = useParams();
@@ -111,7 +125,7 @@ function AddPlayer() {
         className='detail-header'
         style={{ backgroundColor: teamColors[team] }}
       >
-        <img src={`/images/${getTeamLogo(team)}`} alt={team} />
+        <img src={`/images/teams/${getTeamLogo(team)}`} alt={team} />
 
         <h2 className='detail-title'>{team}</h2>
       </div>
@@ -217,12 +231,21 @@ function AddPlayer() {
 
           <div className='form-field'>
             <label>Position</label>
-            <input
-              type='text'
+
+            <select
               name='position'
               value={player.position}
               onChange={handleChange}
-            />
+            >
+              <option value=''>Select a position</option>
+
+              {positions.map((position) => (
+                <option key={position} value={position}>
+                  {getPositionName(position)}
+                </option>
+              ))}
+            </select>
+
             {errors.position && (
               <span className='error-message'>{errors.position}</span>
             )}

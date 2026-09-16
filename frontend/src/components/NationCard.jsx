@@ -10,7 +10,11 @@ function getNationLogo(nation) {
 function NationCard({ nation }) {
   return (
     <div className='team-card'>
-      <img src={`/images/flags/${getNationLogo(nation)}`} alt={nation} />
+      <img
+        src={`/images/flags/${getNationLogo(nation)}`}
+        className='nation-flag'
+        alt={nation}
+      />
 
       <h3>{getNationName(nation)}</h3>
 

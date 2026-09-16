@@ -8,10 +8,17 @@ export function playerValidation(name, value) {
             return '';
 
         case 'nation':
-        case 'position':
             if (!/^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ\s]*$/.test(value)) {
                 return 'Only letters are allowed';
             }
+
+            return '';
+
+        case 'position':
+            if (!/^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ\s,]*$/.test(value)) {
+                return 'Only letters and commas are allowed';
+            }
+
             return '';
 
         case 'age':

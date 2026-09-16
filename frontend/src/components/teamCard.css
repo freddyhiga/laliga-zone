@@ -17,16 +17,13 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.team-card img {
+.team-logo,
+.position-player {
     width: 100px;
     height: 100px;
     object-fit: contain;
     margin-top: 10px;
     transition: transform 0.3s ease;
-}
-
-.team-card:hover img {
-    transform: scale(1.1);
 }
 
 .team-card h3 {
@@ -66,4 +63,18 @@
 
 .team-card:hover .team-overlay {
     opacity: 1;
+}
+
+.nation-flag {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-logo,
+.team-card:hover .nation-flag,
+.team-card:hover .position-player {
+    transform: scale(1.1);
 }

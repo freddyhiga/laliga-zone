@@ -27,7 +27,7 @@ function NationDetails() {
       <h2>{getNationName(nation)}</h2>
 
       <Link to='/nations' className='back-link'>
-        <img src='/icon/circle-chevron-left.svg' alt='back' />
+        <img src='/images/icons/circle-chevron-left.svg' alt='back' />
         Back
       </Link>
 

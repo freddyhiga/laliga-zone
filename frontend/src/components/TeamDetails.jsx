@@ -30,20 +30,20 @@ function TeamDetails() {
         className='detail-header'
         style={{ backgroundColor: teamColors[team] }}
       >
-        <img src={`/images/${getTeamLogo(team)}`} alt={team} />
+        <img src={`/images/teams/${getTeamLogo(team)}`} alt={team} />
 
         <h2 className='detail-title'>{team}</h2>
       </div>
 
       <div className='detail-actions'>
         <Link to='/teams' className='back-link'>
-          <img src='/icon/circle-chevron-left.svg' alt='back' />
+          <img src='/images/icons/circle-chevron-left.svg' alt='back' />
           Back
         </Link>
 
         {isLoggedIn && (
           <Link to={`/teams/${team}/add-player`} className='add-player-link'>
-            <img src='/icon/circle-plus.svg' alt='update' />
+            <img src='/images/icons/circle-plus.svg' alt='update' />
             Add Player
           </Link>
         )}

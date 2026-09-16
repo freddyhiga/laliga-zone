@@ -5,7 +5,7 @@ import './teamCard.css';
 function PositionCard({ position }) {
   return (
     <div className='team-card'>
-      <img src='/images/player.png' alt='player' />
+      <img src='/images/player.png' alt='player' className='position-player' />
       <h3>{getPositionName(position)}</h3>
 
       <div className='team-overlay'>

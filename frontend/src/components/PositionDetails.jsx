@@ -25,7 +25,7 @@ function PositionDetails() {
       <h2>{getPositionName(position)}</h2>
 
       <Link to='/positions' className='back-link'>
-        <img src='/icon/circle-chevron-left.svg' alt='back' />
+        <img src='/images/icons/circle-chevron-left.svg' alt='back' />
         Back
       </Link>
 

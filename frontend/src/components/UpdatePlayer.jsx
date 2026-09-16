@@ -115,7 +115,7 @@ function UpdatePlayer() {
         className='detail-header'
         style={{ backgroundColor: teamColors[team] }}
       >
-        <img src={`/images/${getTeamLogo(team)}`} alt={team} />
+        <img src={`/images/teams/${getTeamLogo(team)}`} alt={team} />
 
         <h2 className='detail-title'>{team}</h2>
       </div>
@@ -322,7 +322,7 @@ function UpdatePlayer() {
             Update Player
           </button>
 
-          <Link to='/teams' className='back-btn'>
+          <Link to={`/teams/${team}`} className='back-btn'>
             Back
           </Link>
         </div>

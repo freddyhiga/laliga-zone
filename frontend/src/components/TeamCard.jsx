@@ -5,7 +5,11 @@ import { getTeamLogo } from '../utils/teamUtils';
 function TeamCard({ team }) {
   return (
     <div className='team-card'>
-      <img src={`/images/${getTeamLogo(team)}`} alt={team} />
+      <img
+        src={`/images/teams/${getTeamLogo(team)}`}
+        className='team-logo'
+        alt={team}
+      />
 
       <h3>{team}</h3>
 
