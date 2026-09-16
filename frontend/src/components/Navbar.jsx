@@ -22,6 +22,9 @@ function Navbar() {
             <NavLink to='/'>Home</NavLink>
           </li>
           <li>
+            <NavLink to='/players'>Players</NavLink>
+          </li>
+          <li>
             <NavLink to='/teams'>Teams</NavLink>
           </li>
           <li>

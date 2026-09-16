@@ -279,7 +279,7 @@ function UpdatePlayer() {
             <label>Expected Goals</label>
             <input
               type='number'
-              step='0.01'
+              step='0.1'
               name='expectedGoals'
               value={player.expectedGoals}
               onChange={handleChange}
@@ -306,7 +306,7 @@ function UpdatePlayer() {
             <label>Expected Assists</label>
             <input
               type='number'
-              step='0.01'
+              step='0.1'
               name='expectedAssists'
               value={player.expectedAssists}
               onChange={handleChange}

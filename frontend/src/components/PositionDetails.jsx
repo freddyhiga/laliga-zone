@@ -29,7 +29,9 @@ function PositionDetails() {
         Back
       </Link>
 
-      <PlayerList players={players} />
+      <div style={{ marginTop: '20px' }}>
+        <PlayerList players={players} />
+      </div>
     </div>
   );
 }

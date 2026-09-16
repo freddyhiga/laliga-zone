@@ -30,8 +30,9 @@ function NationDetails() {
         <img src='/images/icons/circle-chevron-left.svg' alt='back' />
         Back
       </Link>
-
-      <PlayerList players={players} />
+      <div style={{ marginTop: '20px' }}>
+        <PlayerList players={players} />
+      </div>
     </div>
   );
 }

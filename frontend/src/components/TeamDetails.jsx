@@ -48,7 +48,10 @@ function TeamDetails() {
           </Link>
         )}
       </div>
-      <PlayerList players={players} showUpdate={true} showDelete={true} />
+
+      <div style={{ marginTop: '20px' }}>
+        <PlayerList players={players} showUpdate={true} showDelete={true} />
+      </div>
     </div>
   );
 }

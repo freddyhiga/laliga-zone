@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './playerList.css';
 import '../index.css';
@@ -8,6 +8,10 @@ import { deletePlayer } from '../api/playerApi';
 
 function PlayerList({ players, showUpdate = false, showDelete = false }) {
   const [playerList, setPlayerList] = useState(players);
+
+  useEffect(() => {
+    setPlayerList(players);
+  }, [players]);
 
   const [playersToShow, setPlayersToShow] = useState(20);
   const { isLoggedIn } = useContext(AuthContext);

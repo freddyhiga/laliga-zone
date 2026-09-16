@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Players from './pages/Players';
 import Teams from './pages/Teams';
 import Nations from './pages/Nations';
 import Positions from './pages/Positions';
@@ -19,6 +20,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/players' element={<Players />} />
         <Route path='/teams' element={<Teams />} />
         <Route path='/teams/:team/add-player' element={<AddPlayer />} />
         <Route path='/teams/:team' element={<TeamDetails />} />
