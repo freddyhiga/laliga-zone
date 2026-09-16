@@ -117,7 +117,28 @@ The frontend will run on `http://localhost:5173`.
 ![Homepage](images/Homepage.png) 
 
 ### Teams 
-![Teams](images/Teams.png) 
+![Teams](images/team-page.png) 
+
+### Team Details
+![Team Details](images/team-details.png) 
+
+### Nations 
+![Nations](images/nation-page.png) 
+
+### Positions
+![Positions](images/position-page.png) 
+
+### Login 
+![Login](images/login-page.png) 
+
+### Add Player
+![Add Player](images/add-player.png) 
+
+### Update Player
+![Update Player](images/update-player.png) 
+
+### Delete Player
+![Delete Player](images/delete-player.png) 
 
 
 
