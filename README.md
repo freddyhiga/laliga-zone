@@ -1,11 +1,11 @@
 # La Liga Zone
 
-Full-stack application for managing La Liga players, teams, and nations.
+Full-stack application for managing La Liga players, teams, nations, and positions, with search and filtering features.
 
 ## Overview
-La Liga Zone is a full-stack web application for exploring and managing La Liga football players. The application provides dedicated pages for teams, nations, and positions, allowing users to easily browse and find players based on different categories.
+La Liga Zone is a full-stack web application for exploring and managing La Liga football players. The application provides dedicated pages for players, teams, nations, and positions, allowing users to easily browse and find players based on different categories.
 
-Users can explore all La Liga teams and select a team to view its players. The Nation page allows users to select a nation and view all players from that nation, while the Position page allows users to select a position, such as GK (Goalkeeper), DF (Defender), MF (Midfielder), or FW (Forward), and view all players in that position. Each of these pages includes a search bar to help users quickly find the information they are looking for.
+Users can explore all La Liga players on the Players page and quickly find a specific player by name. The Teams page allows users to explore all La Liga teams and select a team to view its players. The Nations page allows users to select a nation and view all players from that nation, while the Positions page allows users to select a position, such as GK (Goalkeeper), DF (Defender), MF (Midfielder), or FW (Forward), and view all players in that position. Each page includes search and filtering features to help users quickly find the information they are looking for.
 
 The application also includes a homepage and an admin login system. Authenticated administrators can create, update, and delete player information through the application.
 
@@ -13,11 +13,11 @@ The project was built using React for the frontend, Spring Boot for the backend,
 
 ## Features
 - **Homepage** — Provides an introduction and navigation to the main sections of the application.
+- **Player Browser** — Browse and search all La Liga players.
 - **Team Browser** — Browse all La Liga teams and select a team to see its players.
 - **Nation Browser** — Browse available nations and select a nation to see all players from that nation.
 - **Position Browser** — Browse players by position category: GK (Goalkeeper), DF (Defender), MF (Midfielder), and FW (Forward).
-- **Search** — Search and filter players within the Team, Nation, and Position pages.
-- **Player Management** — View detailed player information.
+- **Search** — Search and filter players across the Players, Teams, Nations, and Positions pages.
 - **Admin Authentication** — Admin users can log in through a login page.
 - **Admin Player Management** — Authenticated admins can create, update, and delete player information. 
 
@@ -39,9 +39,10 @@ The project was built using React for the frontend, Spring Boot for the backend,
 - `backend/src/main/java/com/ll/laliga_zone/exception` — Exception handling.
 
 - `frontend/src/api` — API functions for communicating with the Spring Boot backend, including retrieving, filtering, creating, updating, and deleting player data.
-- `frontend/src/components` — Reusable React components for displaying teams, nations, positions, and player information, as well as navigation, authentication, and player management.
-- `frontend/src/hooks` — Custom React hooks for fetching player data and managing loading and error states, including players filtered by team, nation, or position.
-- `frontend/src/pages` — Main application pages, such as Home, Team, Nation, Position, and Login pages.
+- `frontend/src/components` — Reusable React components for displaying players, teams, nations, and positions.
+- `frontend/src/context` — React context for managing authentication state.
+- `frontend/src/hooks` — Custom React hooks for fetching player data and managing loading and error states, including filtering players by team, nation, or position.
+- `frontend/src/pages` — Main application pages, such as Home, Players, Team, Nation, Position, and Login pages.
 - `frontend/src/utils` — Shared data and utility functions for nation and position names, player form validation, team colors, and team logos.
 
 ## API Endpoints
@@ -90,7 +91,9 @@ cd laliga-zone
 
 2. Configure the PostgreSQL database:
 
-Create a database named `laliga_db` and configure the database credentials in the backend environment.
+Create a database named `laliga_db` and configure the PostgreSQL connection using the required environment variables.
+
+Import the provided `laliga_stats.csv` dataset into the `player_stats` table before starting the application.
 
 3. Start the backend:
 
@@ -115,6 +118,9 @@ The frontend will run on `http://localhost:5173`.
 
 ### Homepage 
 ![Homepage](images/homepage.png) 
+
+### Players 
+![Players](images/player-page.png) 
 
 ### Teams 
 ![Teams](images/team-page.png) 
