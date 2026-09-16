@@ -114,7 +114,7 @@ The frontend will run on `http://localhost:5173`.
 ## Screenshots
 
 ### Homepage 
-![Homepage](images/Homepage.png) 
+![Homepage](images/homepage.png) 
 
 ### Teams 
 ![Teams](images/team-page.png) 
