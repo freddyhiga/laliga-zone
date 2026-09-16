@@ -113,7 +113,11 @@ The frontend will run on `http://localhost:5173`.
 
 ## Screenshots
 
-- **Homepage** — 
+### Homepage 
+![Homepage](images/Homepage.png) 
+
+### Teams 
+![Teams](images/Teams.png) 
 
 
 
